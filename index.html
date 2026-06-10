@@ -1,686 +1,2289 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loan DSA Financial Services</title>
-  <meta name="description" content="Modern financial services homepage for loan and DSA services, designed to build trust and generate quality leads." />
-  <meta name="theme-color" content="#01696f" />
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet">
-  <style>
-    :root, [data-theme="light"] {
-      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
-      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
-      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
-      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
-      --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
-      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
-      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
-      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
-      --color-bg: #f7f6f2;
-      --color-surface: #f9f8f5;
-      --color-surface-2: #fbfbf9;
-      --color-surface-offset: #f1eeea;
-      --color-border: #d7d2ca;
-      --color-divider: #e2ddd6;
-      --color-text: #24211b;
-      --color-text-muted: #66625b;
-      --color-text-faint: #9d988f;
-      --color-text-inverse: #f9f8f4;
-      --color-primary: #01696f;
-      --color-primary-hover: #0c4e54;
-      --color-primary-highlight: #d7e8e5;
-      --color-success: #437a22;
-      --shadow-sm: 0 1px 2px rgba(32, 28, 20, 0.08);
-      --shadow-md: 0 12px 30px rgba(32, 28, 20, 0.08);
-      --shadow-lg: 0 20px 60px rgba(32, 28, 20, 0.14);
-      --radius-sm: 0.5rem;
-      --radius-md: 0.85rem;
-      --radius-lg: 1.25rem;
-      --radius-xl: 1.75rem;
-      --radius-full: 9999px;
-      --content-wide: 1200px;
-      --content-default: 1080px;
-      --font-body: 'Satoshi', Inter, sans-serif;
-      --font-display: 'Cabinet Grotesk', 'Satoshi', sans-serif;
-      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
-    }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    [data-theme="dark"] {
-      --color-bg: #171614;
-      --color-surface: #1c1b19;
-      --color-surface-2: #23211f;
-      --color-surface-offset: #262422;
-      --color-border: #37342f;
-      --color-divider: #2b2926;
-      --color-text: #eeebe5;
-      --color-text-muted: #b2aca2;
-      --color-text-faint: #857e74;
-      --color-text-inverse: #171614;
-      --color-primary: #4f98a3;
-      --color-primary-hover: #75b7c1;
-      --color-primary-highlight: #21363a;
-      --color-success: #7eb85b;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
-      --shadow-md: 0 12px 30px rgba(0,0,0,0.25);
-      --shadow-lg: 0 20px 60px rgba(0,0,0,0.35);
-    }
+  <!-- Primary SEO -->
+  <title>Flexi Hybrid Loan India | Lower EMI & Flexible Repayment</title>
+  <meta name="description" content="Apply for a Flexi Hybrid Loan in India with lower EMI, flexible repayment, withdrawal facility and expert loan assistance from TechFinserv.">
 
-    * , *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: var(--font-body);
-      font-size: var(--text-base);
-      color: var(--color-text);
-      background:
-        radial-gradient(circle at top left, color-mix(in srgb, var(--color-primary) 10%, transparent) 0, transparent 28%),
-        radial-gradient(circle at bottom right, color-mix(in srgb, var(--color-primary) 7%, transparent) 0, transparent 24%),
-        var(--color-bg);
-      line-height: 1.6;
-    }
+  <link rel="canonical" href="https://freyafinserv.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#071459">
 
-    img, svg { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea, select { font: inherit; }
-    .skip-link {
-      position: absolute; left: 1rem; top: -3rem; background: var(--color-primary); color: var(--color-text-inverse);
-      padding: 0.75rem 1rem; border-radius: var(--radius-md); z-index: 100;
-    }
-    .skip-link:focus { top: 1rem; }
+  <!-- Hreflang -->
+  <link rel="alternate" href="https://freyafinserv.com/" hreflang="en-IN">
+  <link rel="alternate" href="https://freyafinserv.com/" hreflang="x-default">
 
-    .container { width: min(calc(100% - 2rem), var(--content-default)); margin-inline: auto; }
-    .section { padding: clamp(var(--space-12), 8vw, var(--space-24)) 0; }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.45rem 0.9rem;
-      border-radius: var(--radius-full); background: var(--color-primary-highlight); color: var(--color-primary);
-      font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-    }
-    .eyebrow::before { content: ''; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: currentColor; }
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    .site-header {
-      position: sticky; top: 0; z-index: 50;
-      backdrop-filter: blur(14px);
-      background: color-mix(in srgb, var(--color-bg) 88%, transparent);
-      border-bottom: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-    }
-    .nav-row {
-      display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 4.75rem;
-    }
-    .brand { display: inline-flex; align-items: center; gap: 0.9rem; font-weight: 800; }
-    .brand-mark {
-      width: 2.9rem; height: 2.9rem; border-radius: 0.9rem; display: grid; place-items: center;
-      background: linear-gradient(145deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 65%, white));
-      color: white; box-shadow: var(--shadow-md);
-    }
-    .brand-mark svg { width: 1.45rem; height: 1.45rem; }
-    .brand-text strong { display: block; font-size: var(--text-sm); }
-    .brand-text span { display: block; color: var(--color-text-muted); font-size: var(--text-xs); }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TechFinserv">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Flexi Hybrid Loan Assistance | Apply Online with Expert Support – TechFinserv">
+  <meta property="og:description" content="Understand Flexi Hybrid Loan eligibility and lower initial EMI benefits with expert guidance. No CIBIL impact at this stage." />
+  <meta property="og:url" content="https://freyafinserv.com/">
+  <meta property="og:image" content="https://www.techfinserv.com/apply-now/flexi-loan-assistance/flexi-hybrid-loan.png">
+  <meta property="og:image:secure_url" content="https://www.techfinserv.com/apply-now/flexi-loan-assistance/flexi-hybrid-loan.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Flexi Hybrid Loan Assistance – FreyaFinserv">
 
-    .nav-links { display: flex; align-items: center; gap: var(--space-6); }
-    .nav-links a { color: var(--color-text-muted); font-size: var(--text-sm); }
-    .nav-links a:hover { color: var(--color-text); }
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TechFinservIN">
+  <meta name="twitter:creator" content="@TechFinservIN">
+  <meta name="twitter:title" content="Flexi Hybrid Loan Assistance | Apply Online with Expert Support – TechFinserv">
+  <meta name="twitter:description" content="Explore Flexi Hybrid Loan options with lower initial EMI benefits and expert support." />
+  <meta name="twitter:image" content="https://www.techfinserv.com/apply-now/flexi-loan-assistance/flexi-hybrid-loan.webp">
+  <meta name="twitter:image:alt" content="Flexi Hybrid Loan assistance in India">
 
-    .nav-actions { display: flex; align-items: center; gap: 0.75rem; }
-    .theme-toggle, .menu-toggle {
-      width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-      background: var(--color-surface); color: var(--color-text); display: grid; place-items: center; cursor: pointer;
-      transition: transform var(--transition), border-color var(--transition), background var(--transition);
-    }
-    .theme-toggle:hover, .menu-toggle:hover { transform: translateY(-1px); border-color: color-mix(in srgb, var(--color-text) 20%, transparent); }
-    .menu-toggle { display: none; }
 
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem;
-      padding: 0.95rem 1.35rem; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 700;
-      transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
-      border: 1px solid transparent;
-      min-height: 44px;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--color-primary); color: var(--color-text-inverse); box-shadow: var(--shadow-md); }
-    .btn-primary:hover { background: var(--color-primary-hover); }
-    .btn-secondary {
-      background: var(--color-surface); color: var(--color-text);
-      border-color: color-mix(in srgb, var(--color-text) 12%, transparent);
-    }
+  <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
 
-    .hero { padding-top: clamp(var(--space-8), 6vw, var(--space-16)); }
-    .hero-grid {
-      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(var(--space-8), 5vw, var(--space-16)); align-items: center;
-    }
-    .hero-copy h1 {
-      margin: var(--space-6) 0 var(--space-5); font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 5.6rem);
-      line-height: 0.98; letter-spacing: -0.04em; max-width: 11ch;
-    }
-    .hero-copy p {
-      color: var(--color-text-muted); max-width: 60ch; margin-bottom: var(--space-8);
-      font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
-    }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: var(--space-10); }
-    .hero-proof {
-      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem;
-    }
-    .proof-card {
-      padding: 1rem 1.1rem; border-radius: var(--radius-lg); background: color-mix(in srgb, var(--color-surface) 92%, transparent);
-      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-    }
-    .proof-card strong { display: block; font-size: var(--text-lg); font-family: var(--font-display); }
-    .proof-card span { display: block; color: var(--color-text-muted); font-size: var(--text-xs); }
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+</noscript>
 
-    .hero-panel {
-      position: relative; background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 98%, transparent), var(--color-surface-offset));
-      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent); border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-lg); padding: clamp(1.3rem, 3vw, 2rem); overflow: hidden;
-    }
-    .hero-panel::after {
-      content: ''; position: absolute; inset: auto -3rem -3rem auto; width: 10rem; height: 10rem; border-radius: 50%;
-      background: color-mix(in srgb, var(--color-primary) 12%, transparent); filter: blur(8px);
-    }
-    .metric-strip {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-bottom: 1rem;
-    }
-    .metric {
-      padding: 1rem; border-radius: var(--radius-lg); background: var(--color-surface-2); border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
-    }
-    .metric span { display: block; font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
-    .metric strong { display: block; margin-top: 0.35rem; font-size: var(--text-lg); font-family: var(--font-display); }
-    .lead-card {
-      position: relative; z-index: 1; padding: 1.2rem; border-radius: var(--radius-lg); background: var(--color-surface-2);
-      border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
-    }
-    .lead-card h3 { margin: 0 0 0.5rem; font-size: var(--text-lg); }
-    .lead-card p { margin: 0 0 1rem; color: var(--color-text-muted); font-size: var(--text-sm); }
-    .quick-form { display: grid; gap: 0.85rem; }
-    .quick-form input, .quick-form select {
-      width: 100%; min-height: 3rem; border-radius: 0.95rem; border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-      background: var(--color-bg); padding: 0.9rem 1rem; color: var(--color-text);
-    }
+<link rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</noscript>  
 
-    .trust-bar {
-      margin-top: var(--space-12); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "FreyaFinserv",
+    "url": "https://freyafinserv.com/",
+    "logo": "https://www.techfinserv.com/images/techfinserv-logo.png",
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "description": "Expert guidance for Flexi Hybrid Loan, personal loan and related loan options in India.",
+    "provider": {
+      "@type": "Organization",
+      "name": "FreyaFinserv",
+      "url": "https://www.techfinserv.com/",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61583100667662",
+        "https://www.instagram.com/techfinserv/",
+        "https://www.linkedin.com/company/techfinserv",
+        "https://x.com/TechFinservIN"
+      ]
     }
-    .trust-item {
-      padding: 1rem 1.1rem; border-top: 1px solid var(--color-divider); color: var(--color-text-muted); font-size: var(--text-sm);
-    }
+  }
+  </script>
 
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-6); margin-bottom: var(--space-10); }
-    .section-head h2 {
-      margin: 0.9rem 0 0; font-family: var(--font-display); font-size: clamp(2rem, 3vw, 3.2rem); letter-spacing: -0.03em;
-    }
-    .section-head p { margin: 0; max-width: 54ch; color: var(--color-text-muted); }
-
-    .services-grid {
-      display: grid; grid-template-columns: 1.2fr 0.8fr 0.8fr; gap: 1rem;
-    }
-    .service-card {
-      padding: 1.4rem; border-radius: var(--radius-xl); background: var(--color-surface);
-      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent); box-shadow: var(--shadow-sm);
-    }
-    .service-card.featured { background: linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 8%, var(--color-surface)), var(--color-surface)); }
-    .service-icon {
-      width: 3rem; height: 3rem; border-radius: 1rem; display: grid; place-items: center;
-      background: var(--color-primary-highlight); color: var(--color-primary); margin-bottom: 1rem;
-    }
-    .service-card h3 { margin: 0 0 0.65rem; font-size: 1.35rem; }
-    .service-card p { margin: 0 0 1rem; color: var(--color-text-muted); }
-    .service-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
-    .service-card li { color: var(--color-text); font-size: var(--text-sm); padding-left: 1.2rem; position: relative; }
-    .service-card li::before {
-      content: ''; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--color-primary);
-      position: absolute; left: 0; top: 0.52rem;
-    }
-
-    .steps-wrap {
-      display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 1rem; align-items: stretch;
-    }
-    .panel {
-      border-radius: var(--radius-xl); background: var(--color-surface); border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-      padding: clamp(1.3rem, 2vw, 1.8rem);
-    }
-    .steps-list { display: grid; gap: 1rem; }
-    .step-item {
-      display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; padding-bottom: 1rem; border-bottom: 1px solid var(--color-divider);
-    }
-    .step-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .step-no {
-      width: 2.6rem; height: 2.6rem; border-radius: 50%; display: grid; place-items: center; background: var(--color-primary); color: var(--color-text-inverse); font-weight: 800;
-    }
-    .step-item h3 { margin: 0 0 0.3rem; font-size: 1.1rem; }
-    .step-item p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
-
-    .benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
-    .benefit {
-      padding: 1rem; border-radius: var(--radius-lg); background: var(--color-surface-2); border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
-    }
-    .benefit strong { display: block; margin-bottom: 0.4rem; }
-    .benefit p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
-
-    .audience-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
-    .audience-card {
-      padding: 1.35rem; border-radius: var(--radius-xl); background: var(--color-surface);
-      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-    }
-    .audience-card h3 { margin-top: 0; margin-bottom: 0.6rem; }
-    .audience-card p { margin: 0 0 1rem; color: var(--color-text-muted); }
-    .pill-row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
-    .pill {
-      padding: 0.5rem 0.8rem; border-radius: var(--radius-full); background: var(--color-surface-offset);
-      color: var(--color-text); font-size: var(--text-xs); font-weight: 700;
-    }
-
-    .cta-panel {
-      padding: clamp(1.5rem, 4vw, 2.2rem); border-radius: calc(var(--radius-xl) + 0.25rem);
-      background: linear-gradient(135deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 70%, #0a2c30));
-      color: var(--color-text-inverse); display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem; align-items: center;
-    }
-    .cta-panel h2 { margin: 0 0 0.8rem; font-family: var(--font-display); font-size: clamp(2rem, 3vw, 3rem); line-height: 1.05; }
-    .cta-panel p { margin: 0; color: rgba(249,248,244,0.85); max-width: 54ch; }
-    .cta-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: flex-end; }
-    .cta-panel .btn-secondary { background: rgba(255,255,255,0.12); color: white; border-color: rgba(255,255,255,0.18); }
-
-    .footer {
-      padding: var(--space-12) 0 var(--space-8); border-top: 1px solid var(--color-divider);
-    }
-    .footer-grid {
-      display: grid; grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr; gap: 1rem;
-    }
-    .footer h3, .footer h4 { margin-top: 0; }
-    .footer p, .footer li, .footer a { color: var(--color-text-muted); font-size: var(--text-sm); }
-    .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
-    .footer-note {
-      margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-divider);
-      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; color: var(--color-text-faint); font-size: var(--text-xs);
-    }
-
-    .reveal {
-      opacity: 0; transform: translateY(28px); transition: opacity 700ms ease, transform 700ms ease;
-    }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    @media (max-width: 980px) {
-      .hero-grid, .services-grid, .steps-wrap, .cta-panel, .footer-grid, .audience-grid { grid-template-columns: 1fr; }
-      .trust-bar, .hero-proof { grid-template-columns: repeat(2, 1fr); }
-      .metric-strip { grid-template-columns: 1fr; }
-      .cta-actions { justify-content: flex-start; }
-      .section-head { flex-direction: column; align-items: start; }
-    }
-
-    @media (max-width: 760px) {
-      .nav-links {
-        position: absolute; left: 1rem; right: 1rem; top: calc(100% + 0.5rem); background: var(--color-surface);
-        border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent); border-radius: var(--radius-xl);
-        padding: 1rem; flex-direction: column; align-items: stretch; display: none; box-shadow: var(--shadow-lg);
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.techfinserv.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Loan Assistance",
+        "item": "https://freyafinserv.com/"
       }
-      .nav-links.open { display: flex; }
-      .menu-toggle { display: grid; }
-      .nav-actions .btn { display: none; }
-      .trust-bar, .hero-proof, .benefits { grid-template-columns: 1fr; }
-      .container { width: min(calc(100% - 1.2rem), var(--content-default)); }
-      .hero-copy h1 { max-width: 100%; }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does checking eligibility here affect my CIBIL score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Checking options on this page does not impact your CIBIL score. We do not initiate any credit bureau enquiry at this stage. A CIBIL enquiry happens only if you decide to apply with a bank or NBFC."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a Flexi Hybrid Loan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Flexi Hybrid Loan is a loan structure where the initial tenure may have lower EMI or interest-only style repayment, followed by regular EMI in the later period. Suitability depends on lender policy and applicant profile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I withdraw funds again after making a repayment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depending on lender policy and available limit, borrowers may be able to withdraw funds again after making part-prepayments. This flexibility is one of the key benefits of a Flexi Hybrid Loan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is interest charged on the entire approved loan limit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most Flexi Hybrid Loan structures, interest is generally charged only on the utilized loan amount rather than the entire approved limit. Terms may vary by lender."
+        }
+      },      
+      {
+        "@type": "Question",
+        "name": "Can I make multiple part-prepayments in a Flexi Hybrid Loan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many lenders allow multiple part-prepayments during the loan tenure. Reducing the utilized amount may help lower future interest costs, subject to lender terms and conditions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should consider a Flexi Hybrid Loan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Flexi Hybrid Loans are often considered by salaried employees, self-employed professionals and business owners who require funding flexibility, lower initial EMI and better cash flow management."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a Personal Loan and a Flexi Hybrid Loan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A traditional Personal Loan usually has a fixed EMI from the beginning of the tenure. A Flexi Hybrid Loan may offer lower initial EMI, withdrawal facility and interest charged only on the utilized amount, depending on lender policy."
+        }
+      },            
+      {
+        "@type": "Question",
+        "name": "Is FreyaFinserv a bank or NBFC?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. FreyaFinserv is a loan guidance platform. We help users understand suitable loan options based on their profile before they apply with a bank or NBFC."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I get a guaranteed loan or lowest interest rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Loan approval and interest rates depend on bank or NBFC policies, your income profile and credit behaviour. We provide guidance and indicative options, not guarantees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after I submit my details?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A representative reviews your requirement and shares suitable loan guidance. No application is submitted to any bank or NBFC without your confirmation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg: #FFFFFF;
+      --bg-soft: #F8FAFC;
+      --surface: #FFFFFF;
+      --surface-alt: #F8FAFC;
+      --text: #0F172A;
+      --muted: #475569;
+      --muted-2: #64748B;
+      --border: #E2E8F0;
+      --border-strong: #CBD5E1;
+      --brand: #0F766E;
+      --brand-soft: #ECFDF5;
+      --success-soft: #ECFDF3;
+      --success: #059669;
+
+      --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --shadow-lg: 0 18px 50px rgba(15, 23, 42, 0.08);
+
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 22px;
+
+      --container: 1200px;
+      --section-space: clamp(64px, 9vw, 110px);
     }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body{
+      margin:0;
+      font-family:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{ text-decoration:none; color:inherit; }
+    img{ max-width:100%; display:block; }
+    .container-max{
+      max-width:var(--container);
+      margin:0 auto;
+      padding-inline:20px;
+    }
+
+    .section{
+      padding-block:var(--section-space);
+    }
+
+    .section-soft{
+      background:var(--bg-soft);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--brand);
+      background:var(--brand-soft);
+      border:1px solid #dbe5ff;
+      border-radius:999px;
+    }
+
+    .section-title{
+      font-size:clamp(1.9rem, 3vw, 2.8rem);
+      line-height:1.15;
+      font-weight:800;
+      letter-spacing:-0.03em;
+      margin-bottom:16px;
+      color:var(--text);
+    }
+
+    .section-copy{
+      font-size:1rem;
+      color:var(--muted);
+      max-width:700px;
+      margin-bottom:0;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(226,232,240,.9);
+      backdrop-filter:saturate(180%) blur(10px);
+      -webkit-backdrop-filter:saturate(180%) blur(10px);
+    }
+
+    .nav-shell{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      min-height:78px;
+    }
+
+    .brand-wrap{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:0;
+    }
+
+    .brand-logo{
+      height:52px;
+      width:auto;
+      object-fit:contain;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .menu a{
+      color:var(--muted);
+      font-size:15px;
+      font-weight:500;
+      padding:10px 14px;
+      border-radius:10px;
+    }
+
+    .menu a:hover{
+      background:var(--bg-soft);
+      color:var(--brand);
+    }
+
+    .nav-cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:0 20px;
+      border-radius:12px;
+      background:var(--brand);
+      color:#fff !important;
+      font-size:14px;
+      font-weight:700;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .mobile-menu-toggle{
+      display:none;
+      width:46px;
+      height:46px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      gap:4px;
+    }
+
+    .mobile-menu-toggle span{
+      width:18px;
+      height:2px;
+      background:var(--brand);
+      border-radius:999px;
+      display:block;
+    }
+
+    .mobile-menu{
+      display:none;
+      padding:0 0 16px;
+    }
+
+    .mobile-menu a{
+      display:block;
+      padding:14px 0;
+      border-bottom:1px solid var(--border);
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    .hero{
+      padding:56px 0 40px;
+    
+ background:
+ radial-gradient(
+   circle at top right,
+   rgba(14,165,233,.08),
+   transparent 40%
+ ),
+ #fff;
+
+    }
+
+    .hero-grid{
+      display:grid;
+       grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);
+      gap:40px;
+      align-items:start;
+    }
+
+    .hero-copy{
+      padding-top:12px;
+    }
+
+    .hero-title{
+      font-size:clamp(2.25rem, 5vw, 4.5rem);
+      line-height:1.03;
+      letter-spacing:-0.045em;
+      font-weight:800;
+      margin:18px 0 18px;
+      max-width:11ch;
+      color:var(--text);
+    }
+
+    .hero-title .brand-accent{
+      color:var(--brand);
+    }
+
+    .hero-subtitle{
+      font-size:1.06rem;
+      color:var(--muted);
+      max-width:58ch;
+      margin-bottom:24px;
+    }
+
+    .hero-points{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      margin:28px 0 34px;
+    }
+
+    .hero-point{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      padding:16px 18px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .hero-point-icon{
+      width:36px;
+      height:36px;
+      border-radius:10px;
+      display:grid;
+      place-items:center;
+      background:var(--brand-soft);
+      color:var(--brand);
+      flex:0 0 auto;
+    }
+
+    .hero-point strong{
+      display:block;
+      font-size:.96rem;
+      color:var(--text);
+      margin-bottom:2px;
+    }
+
+    .hero-point span{
+      display:block;
+      color:var(--muted-2);
+      font-size:.92rem;
+      line-height:1.5;
+    }
+
+    .hero-trustbar{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:6px;
+    }
+
+    .trust-chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      min-height:42px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#F8FAFC;
+      color:var(--muted);
+      font-size:.9rem;
+      font-weight:600;
+    }
+
+    .trust-dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:var(--success);
+    }
+
+    .form-panel{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow:var(--shadow-lg);
+      overflow:hidden;
+      position:sticky;
+      top:104px;
+    }
+
+    .form-panel-head{
+      padding:18px 18px 14px;
+      border-bottom:1px solid var(--border);
+      background:#fff;
+    }
+
+    .form-step{
+      display:inline-flex;
+      align-items:center;
+      min-height:26px;
+      padding:0 10px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:var(--brand);
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+
+    .form-title{
+      font-size:1.05rem;
+      font-weight:700;
+      color:var(--text);
+      margin-bottom:6px;
+    }
+
+    .form-sub{
+      font-size:.94rem;
+      color:var(--muted);
+      margin-bottom:0;
+    }
+
+    .form-panel-body{
+      padding:18px;
+    }
+
+    .form-label{
+      display:block;
+      margin-bottom:8px;
+      font-size:.84rem;
+      font-weight:700;
+      color:var(--text);
+      letter-spacing:.02em;
+      text-transform:uppercase;
+    }
+
+    .form-control,
+    .form-select{
+      min-height:46px;
+      border-radius:14px;
+      border:1px solid var(--border-strong);
+      padding:12px 14px;
+      font-size:14px;
+      color:var(--text);
+      background:#fff;
+      box-shadow:none;
+    }
+
+    .form-control::placeholder{ color:#94A3B8; }
+
+    .form-control:focus,
+    .form-select:focus{
+      border-color:var(--brand);
+      box-shadow:0 0 0 .18rem rgba(7,20,89,.08);
+    }
+
+    .form-check{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      margin-top:4px;
+    }
+
+    .form-check-input{
+      margin-top:4px;
+      border-color:var(--border-strong);
+    }
+
+    .form-check-input:checked{
+      background-color:var(--brand);
+      border-color:var(--brand);
+    }
+
+    .form-check-label{
+      font-size:.87rem;
+      color:var(--muted);
+      line-height:1.65;
+    }
+
+    .form-check-label a{
+      color:var(--brand);
+      font-weight:600;
+    }
+
+    .btn-brand{
+      min-height:48px;
+      border:none;
+      border-radius:999px;
+      background:var(--brand);
+      color:#fff;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:.01em;
+      width:100%;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .btn-brand:hover{
+      background:#0a1c77;
+    }
+
+    .btn-outline-brand{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:14px;
+      border:1px solid var(--border-strong);
+      background:#fff;
+      color:var(--brand);
+      font-weight:700;
+    }
+
+    .form-note{
+      font-size:.86rem;
+      color:var(--muted);
+      margin:14px 0 0;
+    }
+
+    .stats-row{
+      margin-top:34px;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+    }
+
+    .stat-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:20px;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .stat-card h3{
+      font-size:1.6rem;
+      font-weight:800;
+      color:var(--brand);
+      margin-bottom:6px;
+    }
+
+    .stat-card p{
+      font-size:.92rem;
+      color:var(--muted);
+      margin:0;
+    }
+
+    .benefit-card,
+    .process-card,
+    .trust-card,
+    .faq-card,
+    .cta-panel,
+    .comparison-table-wrap{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      box-shadow:var(--shadow-md);
+    }
+
+    .benefit-card{
+      height:100%;
+      padding:28px;
+    }
+
+    .icon-box{
+      width:48px;
+      height:48px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:var(--brand-soft);
+      color:var(--brand);
+      margin-bottom:18px;
+    }
+
+    .benefit-card h3,
+    .process-card h3,
+    .trust-card h3{
+      font-size:1.08rem;
+      font-weight:700;
+      margin-bottom:10px;
+      color:var(--text);
+    }
+
+    .benefit-card p,
+    .process-card p,
+    .trust-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .comparison-table-wrap{
+      overflow:hidden;
+    }
+
+    .comparison-head{
+      padding:28px 28px 0;
+    }
+
+    .comparison-table{
+      width:100%;
+      min-width:760px;
+      border-collapse:separate;
+      border-spacing:0;
+    }
+
+    .comparison-table th,
+    .comparison-table td{
+      padding:18px 20px;
+      border-top:1px solid var(--border);
+      vertical-align:top;
+      font-size:.95rem;
+    }
+
+    .comparison-table th{
+      background:#fbfdff;
+      color:var(--text);
+      font-weight:700;
+    }
+
+    .comparison-table td{
+      color:var(--muted);
+    }
+
+    .comparison-table td.feature{
+      color:var(--text);
+      font-weight:600;
+      width:28%;
+      background:#fff;
+    }
+
+    .comparison-highlight{
+      color:var(--brand);
+      font-weight:700;
+    }
+
+    .process-card{
+      height:100%;
+      padding:26px;
+      position:relative;
+    }
+
+    .step-number{
+      width:34px;
+      height:34px;
+      border-radius:999px;
+      background:var(--brand);
+      color:#fff;
+      display:grid;
+      place-items:center;
+      font-size:.85rem;
+      font-weight:700;
+      margin-bottom:16px;
+    }
+
+    .trust-card{
+      height:100%;
+      padding:28px;
+    }
+
+    .logo-strip{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:22px;
+    }
+
+    .logo-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:44px;
+      padding:0 16px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--text);
+      font-size:.9rem;
+      font-weight:700;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .faq-shell{
+      display:grid;
+      gap:16px;
+    }
+
+    .accordion-item{
+      border:1px solid var(--border) !important;
+      border-radius:18px !important;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:none !important;
+    }
+
+    .accordion-item + .accordion-item{
+      margin-top:14px;
+    }
+
+    .accordion-button{
+      padding:20px 22px;
+      font-weight:700;
+      color:var(--text);
+      background:#fff;
+      box-shadow:none !important;
+    }
+
+    .accordion-button:not(.collapsed){
+      color:var(--brand);
+      background:#f9fbff;
+    }
+
+    .accordion-body{
+      padding:0 22px 22px;
+      color:var(--muted);
+      font-size:.95rem;
+      line-height:1.7;
+    }
+
+    .cta-panel{
+      padding:34px;
+      background:linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+
+    .cta-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:22px;
+    }
+
+    .footer{
+      padding:40px 0 28px;
+      background:#fff;
+      border-top:1px solid var(--border);
+    }
+
+    .footer-grid{
+      display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 30px 0 20px;
+    }
+
+    .footer h4{
+      font-size:.95rem;
+      font-weight:700;
+      color:var(--text);
+      margin-bottom:14px;
+    }
+
+    .footer a,
+    .footer p{
+       display: block;
+  font-size: 13px;
+  color: #1e23b7;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+    }
+
+    .footer-bottom{
+      padding-top:18px;
+      margin-top:18px;
+      border-top:1px solid var(--border);
+      font-size:.86rem;
+      color:var(--muted-2);
+    }
+
+    .sr-only{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+
+    @media (max-width: 991.98px){
+      .menu{ display:none; }
+      .mobile-menu-toggle{ display:inline-flex; }
+      .mobile-menu.open{ display:block; }
+
+      .hero{
+        padding-top:34px;
+      }
+
+      .hero-grid{
+        grid-template-columns:1fr;
+        gap:28px;
+      }
+
+      .form-panel{
+        position:static;
+      }
+
+      .hero-points,
+      .stats-row,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .comparison-table-wrap{
+        overflow:auto;
+      }
+
+      .cta-panel{
+        padding:26px;
+      }
+    }
+
+    @media (max-width: 767.98px){
+      .container-max{
+        padding-inline:16px;
+      }
+
+      .nav-shell{
+        min-height:72px;
+      }
+
+      .brand-logo{
+        height:46px;
+      }
+
+      .hero-title{
+        max-width:none;
+      }
+
+      .hero-subtitle{
+        font-size:1rem;
+      }
+
+      .hero-point,
+      .stat-card,
+      .benefit-card,
+      .process-card,
+      .trust-card{
+        padding:20px;
+      }
+
+      .form-panel-head,
+      .form-panel-body{
+        padding:20px;
+      }
+
+      .section{
+        padding-block:56px;
+      }
+
+      .comparison-head{
+        padding:22px 22px 0;
+      }
+
+      .comparison-table th,
+      .comparison-table td{
+        padding:16px;
+      }
+
+      .accordion-button{
+        padding:18px;
+        font-size:.96rem;
+      }
+
+      .accordion-body{
+        padding:0 18px 18px;
+      }
+
+      .cta-actions{
+        flex-direction:column;
+      }
+
+      .btn-outline-brand,
+      .btn-brand{
+        width:100%;
+      }
+    }
+
+	 /* form submiting */    
+     .btn-spinner {
+     width: 18px;
+     height: 18px;
+     border: 2px solid rgba(255,255,255,0.4);
+     border-top: 2px solid #fff;
+     border-radius: 50%;
+     display: inline-block;
+     animation: spin 0.8s linear infinite;
+     vertical-align: middle;
+     margin-right: 8px;
+    }
+
+    @keyframes spin {
+     100% {
+        transform: rotate(360deg);
+    }
+}	
+
+.btn-outline-brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:0 18px;
+  border-radius:12px;
+  border:1px solid var(--border-strong);
+  color:var(--brand);
+  font-weight:700;
+  transition:.3s;
+}
+
+.btn-outline-brand:hover{
+  background:var(--brand);
+  color:#fff;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.why-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px;
+  transition:.3s;
+  box-shadow:var(--shadow-sm);
+}
+
+.why-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-lg);
+}
+
+.why-icon{
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  border-radius:16px;
+  background:var(--brand-soft);
+  margin-bottom:18px;
+}
+
+.why-card h3{
+  font-size:1.1rem;
+  font-weight:700;
+  margin-bottom:10px;
+  color:var(--text);
+}
+
+.why-card p{
+  color:var(--muted);
+  margin:0;
+  line-height:1.7;
+}
+
+@media(max-width:991px){
+  .why-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:767px){
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container nav-row">
-      <a href="#home" class="brand" aria-label="Loan DSA Financial Services home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 15.5 12 4l8 11.5"/>
-            <path d="M7.5 15.5h9"/>
-            <path d="M9.5 19.5h5"/>
-          </svg>
-        </span>
-        <span class="brand-text">
-          <strong>Loan DSA Financial</strong>
-          <span>Modern lending & channel partner solutions</span>
-        </span>
-      </a>
+  <a href="#main-content" class="sr-only">Skip to content</a>
 
-      <nav class="nav-links" id="mobileNav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#partners">Partners</a>
-        <a href="#contact">Contact</a>
+  <div class="topbar">
+    <div class="container-max">
+      <header class="nav-shell">
+        <div class="brand-wrap">
+          <a href="/" aria-label="FreyaFinserv home">
+            <img class="brand-logo"
+              src="/images/FreyaFinserv-logo.png"
+              alt="FreyaFinserv logo"
+              width="220"
+              height="52"
+              loading="eager"
+              decoding="async">
+          </a>
+        </div>
+
+        <nav class="menu" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/blogs/">Blog</a>
+          <a href="/emi-calculator/">EMI Calculator</a>
+          <a href="#comparison">Why Flexi Hybrid</a>
+          <a href="#faq">FAQ</a>
+          <a href="#main-content" class="nav-cta">Apply Now</a>
+        </nav>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile">
+        <a href="/">Home</a>
+        <a href="/blogs/">Blog</a>
+        <a href="/emi-calculator/">EMI Calculator</a>
+        <a href="#comparison">Why Flexi Hybrid</a>
+        <a href="#faq">FAQ</a>
+        <a href="#main-content">Apply Now</a>
       </nav>
-
-      <div class="nav-actions">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-        <a class="btn btn-primary" href="#contact">Apply Now</a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
     </div>
-  </header>
+  </div>
 
   <main id="main-content">
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal visible">
-          <span class="eyebrow">Trusted loan sourcing network</span>
-          <h1>Modern financial services for loan growth and DSA partnerships.</h1>
-          <p>Launch a strong digital first impression for your finance business with a homepage that explains your loan services clearly, builds trust quickly, and pushes visitors toward enquiry, callback, or partner registration.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Get Free Consultation</a>
-            <a class="btn btn-secondary" href="#services">Explore Services</a>
-          </div>
-          <div class="hero-proof">
-            <div class="proof-card">
-              <strong>Home Loans</strong>
-              <span>Lead generation and customer assistance</span>
-            </div>
-            <div class="proof-card">
-              <strong>Business Loans</strong>
-              <span>Structured sourcing for SMEs and professionals</span>
-            </div>
-            <div class="proof-card">
-              <strong>DSA Support</strong>
-              <span>Partner onboarding and operational guidance</span>
-            </div>
-          </div>
-        </div>
+    <section class="hero">
+      <div class="container-max">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Flexi Hybrid Loan Assistance</span>
 
-        <div class="hero-panel reveal">
-          <div class="metric-strip">
-            <div class="metric">
-              <span>Turnaround</span>
-              <strong>Fast case review</strong>
-            </div>
-            <div class="metric">
-              <span>Coverage</span>
-              <strong>Multiple loan products</strong>
-            </div>
-            <div class="metric">
-              <span>Support</span>
-              <strong>Partner-first communication</strong>
-            </div>
-          </div>
-          <div class="lead-card">
-            <h3>Quick lead capture form</h3>
-            <p>Use this panel to collect enquiries from borrowers, agents, and referral partners directly from your homepage.</p>
-            <form class="quick-form">
-              <input type="text" placeholder="Full name" aria-label="Full name" />
-              <input type="tel" placeholder="Mobile number" aria-label="Mobile number" />
-              <select aria-label="Service type">
-                <option>Select service</option>
-                <option>Home Loan</option>
-                <option>Business Loan</option>
-                <option>Personal Loan</option>
-                <option>DSA Registration</option>
-              </select>
-              <button class="btn btn-primary" type="button">Request Callback</button>
-            </form>
-          </div>
-        </div>
-      </div>
+            <h1 class="hero-title">
+              Find the Right Loan
+              <span class="brand-accent">for Your Needs</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+              Compare Personal Loans, Home Loans, Business Loans, Loan Against Property, Balance Transfer and Debt Consolidation options from leading banks & NBFCs.
+            </p>
 
-      <div class="container trust-bar">
-        <div class="trust-item">Designed to present services with clarity, authority, and high conversion intent.</div>
-        <div class="trust-item">Suitable for direct customers, referral partners, and DSA onboarding enquiries.</div>
-        <div class="trust-item">Built with semantic sections, responsive layout, and modern CTA placement.</div>
-        <div class="trust-item">Ready for future integration with WhatsApp, forms, CRM, or lead automation.</div>
-      </div>
-    </section>
+            <div class="hero-points">
+              <div class="hero-point">
+                <div class="hero-point-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Designed for better cash-flow planning</strong>
+                  <span>Lower initial repayment burden can make larger ticket sizes more manageable.</span>
+                </div>
+              </div>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">Core offering</span>
-            <h2>Loan services structured for trust and faster action.</h2>
-          </div>
-          <p>Your homepage should show exactly what you offer, who it is for, and why customers or channel partners should connect with you. This layout is designed around those conversion goals.</p>
-        </div>
+              <div class="hero-point">
+                <div class="hero-point-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M7 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Guidance before application</strong>
+                  <span>Understand suitable loan routes before proceeding with any bank or NBFC application.</span>
+                </div>
+              </div>
 
-        <div class="services-grid">
-          <article class="service-card featured reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
-            </div>
-            <h3>Retail loan solutions</h3>
-            <p>Highlight all major loan categories with short benefits and a focused enquiry path so visitors can select the right product without confusion.</p>
-            <ul>
-              <li>Home loan and balance transfer assistance</li>
-              <li>Personal loan support for salaried and self-employed profiles</li>
-              <li>Loan against property and secured funding guidance</li>
-            </ul>
-          </article>
+              <div class="hero-point">
+                <div class="hero-point-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>No CIBIL impact at this stage</strong>
+                  <span>Checking your broad options here does not trigger a credit bureau enquiry.</span>
+                </div>
+              </div>
 
-          <article class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16"/><path d="M7 20V8h10v12"/><path d="M9 12h.01M12 12h.01M15 12h.01"/><path d="M9 16h6"/><path d="M10 8V4h4v4"/></svg>
-            </div>
-            <h3>Business finance</h3>
-            <p>Present funding options for MSMEs, traders, and professionals with practical filters like ticket size, turnover, and eligibility support.</p>
-            <ul>
-              <li>Business loans for expansion and working capital</li>
-              <li>Professional loans for doctors, CAs, and consultants</li>
-              <li>SME lead qualification flow for better case quality</li>
-            </ul>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>DSA partner model</h3>
-            <p>Make your DSA service visible with dedicated points around onboarding, documentation, sourcing support, and relationship management.</p>
-            <ul>
-              <li>DSA registration interest form on homepage</li>
-              <li>Partner support and case submission workflow</li>
-              <li>Transparent communication focused design blocks</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="container steps-wrap">
-        <div class="panel reveal">
-          <span class="eyebrow">How it works</span>
-          <h2 style="margin:1rem 0 1.2rem; font-family: var(--font-display); font-size: clamp(2rem, 3vw, 3rem); line-height: 1.05;">A homepage journey that moves visitors from interest to enquiry.</h2>
-          <div class="steps-list">
-            <div class="step-item">
-              <div class="step-no">01</div>
-              <div>
-                <h3>Choose the right service</h3>
-                <p>Visitors land on a clear hero section and immediately see your loan categories, finance solutions, and DSA support model.</p>
+              <div class="hero-point">
+                <div class="hero-point-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Dedicated support</strong>
+                  <span>Get assistance in understanding eligibility, loan structure, and lender fit.</span>
+                </div>
               </div>
             </div>
-            <div class="step-item">
-              <div class="step-no">02</div>
-              <div>
-                <h3>Share key details</h3>
-                <p>A compact form helps capture phone number, service type, and enquiry intent without making the first step feel heavy.</p>
-              </div>
+
+            <div class="hero-trustbar" aria-label="Trust highlights">
+              <div class="trust-chip"><span class="trust-dot"></span> Secure lead process</div>
+              <div class="trust-chip"><span class="trust-dot"></span> Multiple lender options</div>
+              <div class="trust-chip"><span class="trust-dot"></span> Built for India-wide applicants</div>
             </div>
-            <div class="step-item">
-              <div class="step-no">03</div>
-              <div>
-                <h3>Connect and qualify</h3>
-                <p>Your team can use the form for callbacks, partner registration, document collection, or routing to a CRM pipeline.</p>
+
+            <div class="stats-row">
+              <div class="stat-card">
+                <h3>Quick Eligibility Check</h3>
+                <p>Suitable for borrowers who need higher funding with better early-stage repayment comfort.</p>
+              </div>
+              <div class="stat-card">
+                <h3>Flexible Repayment</h3>
+                <p>Repayment may be lighter in the initial tenure, subject to lender structure and profile fit.</p>
+              </div>
+              <div class="stat-card">
+                <h3>Dedicated Loan Expert</h3>
+                <p>Your profile is reviewed first so the recommendation stays practical and relevant.</p>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="panel reveal" id="partners">
-          <span class="eyebrow">Why this layout works</span>
-          <h2 style="margin:1rem 0 1rem; font-family: var(--font-display); font-size: clamp(1.9rem, 2.8vw, 2.8rem); line-height: 1.06;">Built for finance brands that need credibility and leads.</h2>
-          <p style="margin:0; color:var(--color-text-muted);">The page combines structured trust messaging, service segmentation, and a premium visual style so your business looks established from the first scroll.</p>
-          <div class="benefits">
-            <div class="benefit">
-              <strong>Trust-first design</strong>
-              <p>Clean typography, muted surfaces, and strong CTA contrast make the business look reliable and professional.</p>
+          <aside class="form-panel" aria-labelledby="applyFormTitle">
+            <div class="form-panel-head">
+              <div class="form-step">Step 1</div>
+              <h2 id="applyFormTitle" class="form-title">Start with your basic details</h2>
+              <p class="form-sub">It takes less than 2 minutes. No documents are required at this stage.</p>
             </div>
-            <div class="benefit">
-              <strong>Lead-focused sections</strong>
-              <p>Each block supports the same goal: better quality enquiries for borrowers, agents, and DSA partners.</p>
+
+            <div class="form-panel-body">
+              <form id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d1bf814f-4b60-44fa-b47b-ed5e08afaf53">
+                <input type="hidden" name="subject" value="New Loan Lead - FreyaFinserv">
+                <input type="hidden" name="from_name" value="FreyaFinserv Website">
+                <input type="hidden" name="source_page" value="Flexi Loan Page">
+
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="full_name">Full Name*</label>
+                    <input id="full_name" type="text" class="form-control" name="full_name" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="mobile">Mobile Number*</label>
+                    <input id="mobile" type="tel" class="form-control" name="mobile" placeholder="10-digit mobile" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="employment">Employment Type*</label>
+                    <select id="employment" class="form-select" name="employment" required>
+                      <option value="">Select</option>
+                      <option value="salaried">Salaried employee</option>
+                      <option value="business_owner">Business owner</option>
+                      <option value="Self_employed">Self employed / professional</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="income">Monthly Net Income*</label>
+                    <input id="income" type="number" class="form-control" name="income" placeholder="₹ (approx)" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="city">City*</label>
+                    <input id="city" type="text" class="form-control" name="city" required>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label" for="product">Looking For*</label>
+                    <select id="product" class="form-select" name="product" required>
+                      <option value="">Select</option>
+                      <option>Personal Loan</option>
+                      <option selected>Flexi Hybrid Loan</option>
+                      <option>Reduce My EMI burden</option>
+                      <option>Reduce Interest Rate</option>
+                      <option>General Enquiry</option>
+                      <option>Home Loan</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consent1" name="consent_checkbox" value="accepted" required>
+
+                      <label class="form-check-label" for="consent1">
+                        I agree to the
+                        <a href="/apply-now/terms-and-conditions/" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+                        and
+                        <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                        and authorize FreyaFinserv to contact me regarding loan options and related guidance, even if my number is registered under DND/DNC.
+                      </label>
+
+                      <input type="hidden" name="consent_version" value="v1.0 | 2025-12-30">
+                      <input type="hidden" name="consent_text" value="User explicitly agreed to Terms & Conditions and Privacy Policy and authorized FreyaFinserv to contact regarding loan options and related guidance, including DND/DNC consent.">
+                    </div>
+                  </div>
+
+                    <div class="col-12 mt-2">
+						<button
+                           type="submit"
+                           id="submitBtn"
+                           data-default-text="Get Expert Assistance"
+                           class="btn-brand">
+                           Get Expert Assistance
+                        </button>
+                    </div>
+                </div>
+              </form>
             </div>
-            <div class="benefit">
-              <strong>Easy customization</strong>
-              <p>You can replace text, colors, forms, and contact links with your actual service information and branding.</p>
-            </div>
-            <div class="benefit">
-              <strong>Responsive by default</strong>
-              <p>The homepage adapts cleanly for desktop and mobile visitors without breaking readability or CTA visibility.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
+<!-- LOAN PRODUCTS -->
+
+<section id="products" class="section">
+
+<div class="container-max">
+
+<div class="text-center mb-5">
+
+<span class="eyebrow">
+
+Loan Products
+
+</span>
+
+<h2 class="section-title mt-3">
+
+Explore Loan Solutions
+
+</h2>
+
+<p class="section-copy mx-auto">
+
+Choose from personal loans,
+flexi loans,
+home loans,
+business loans
+and more.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="benefit-card">
+
+<h3>Personal Loan</h3>
+
+<p>
+
+Instant funds for personal requirements.
+
+</p>
+
+<a href="/apply-now/"
+class="btn-outline-brand mt-4">
+
+Check Eligibility
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="benefit-card">
+
+<h3>Flexi Loan</h3>
+
+<p>
+
+Withdraw as needed and pay interest
+only on utilized amount.
+
+</p>
+
+<a href="/apply-now/flexi-loan-assistance/"
+class="btn-outline-brand mt-4">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="benefit-card">
+
+<h3>Flexi Hybrid Loan</h3>
+
+<p>
+
+Lower initial EMI and
+better cashflow management.
+
+</p>
+
+<a href="/apply-now/flexi-loan-assistance/"
+class="btn-outline-brand mt-4">
+
+Compare
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="benefit-card">
+
+<h3>Home Loan</h3>
+
+<p>
+
+Purchase your dream home with
+competitive interest rates.
+
+</p>
+
+<a href="/apply-now/"
+class="btn-outline-brand mt-4">
+
+Explore
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="benefit-card">
+
+<h3>Business Loan</h3>
+
+<p>
+
+Working capital and expansion finance
+for growing businesses.
+
+</p>
+
+<a href="/apply-now/"
+class="btn-outline-brand mt-4">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="benefit-card">
+
+<h3>Loan Against Property</h3>
+
+<p>
+
+Unlock property value at lower rates.
+
+</p>
+
+<a href="/apply-now/"
+class="btn-outline-brand mt-4">
+
+Know More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+    
+
+<!-- WHY CHOOSE FreyaFinserv -->
+
+<section class="section section-soft">
+
+<div class="container-max">
+
+<div class="text-center mb-5">
+
+<span class="eyebrow">
+Why Choose FreyaFinserv
+</span>
+
+<h2 class="section-title mt-3">
+
+Smarter Loan Decisions
+Made Simple
+
+</h2>
+
+<p class="section-copy mx-auto">
+
+Compare multiple lenders, understand eligibility,
+and get expert guidance before applying.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="benefit-card">
+
+<div class="icon-box">🔒</div>
+
+<h3>No CIBIL Impact</h3>
+
+<p>
+Check eligibility without triggering
+a bureau enquiry.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="benefit-card">
+
+<div class="icon-box">⚡</div>
+
+<h3>Fast Processing</h3>
+
+<p>
+Quick assistance from application
+to approval.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="benefit-card">
+
+<div class="icon-box">🏦</div>
+
+<h3>Multiple Lenders</h3>
+
+<p>
+Compare banks and NBFCs
+in one place.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="benefit-card">
+
+<div class="icon-box">🤝</div>
+
+<h3>Dedicated Support</h3>
+
+<p>
+Expert assistance till
+loan disbursal.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section section-soft">
+  <div class="container-max">
+
+    <div class="text-center mb-5">
+      
+
+      <h2 class="section-title mt-3">
+        More Than Just A Loan Application
+      </h2>
+
+      <p class="section-copy mx-auto">
+        We help you compare, understand and choose the right loan solution
+        from multiple banks and NBFCs.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">🏦</div>
+        <h3>Multiple Lender Options</h3>
+        <p>
+          Compare offers from leading banks and NBFCs through a single platform.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Fast Processing</h3>
+        <p>
+          Quick eligibility assessment and faster coordination with lenders.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Better Loan Matching</h3>
+        <p>
+          We help identify suitable loan options based on your profile.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>Dedicated Loan Expert</h3>
+        <p>
+          Get guidance from enquiry to disbursal.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🔒</div>
+        <h3>Safe & Secure</h3>
+        <p>
+          Your information remains protected and shared only when required.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">📋</div>
+        <h3>Transparent Process</h3>
+        <p>
+          Clear information about eligibility, documents and next steps.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- PARTNER LOGOS -->
+
+<section class="section">
+
+<div class="container-max">
+
+<div class="text-center mb-5">
+
+<span class="eyebrow">
+
+Partner Lenders
+
+</span>
+
+<h2 class="section-title mt-3">
+
+Banks & NBFC Partners
+
+</h2>
+
+</div>
+
+<div class="logo-strip">
+
+<div class="logo-pill">HDFC Bank</div>
+
+<div class="logo-pill">ICICI Bank</div>
+
+<div class="logo-pill">Axis Bank</div>
+
+<div class="logo-pill">Kotak Mahindra</div>
+
+<div class="logo-pill">Bajaj Finance</div>
+
+<div class="logo-pill">Tata Capital</div>
+
+<div class="logo-pill">Aditya Birla Capital</div>
+
+<div class="logo-pill">IndusInd Bank</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section class="section section-soft">
+
+<div class="container-max">
+
+<div class="text-center mb-5">
+
+<span class="eyebrow">
+
+Simple Process
+
+</span>
+
+<h2 class="section-title mt-3">
+
+How It Works
+
+</h2>
+
+<p class="section-copy mx-auto">
+
+Get assistance in just four simple steps.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="process-card">
+
+<div class="step-number">1</div>
+
+<h3>Check Eligibility</h3>
+
+<p>
+
+Share basic information to understand
+available loan options.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="process-card">
+
+<div class="step-number">2</div>
+
+<h3>Compare Offers</h3>
+
+<p>
+
+Review lender options and repayment structures.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="process-card">
+
+<div class="step-number">3</div>
+
+<h3>Submit Documents</h3>
+
+<p>
+
+Upload required documents and complete verification.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="process-card">
+
+<div class="step-number">4</div>
+
+<h3>Loan Disbursal</h3>
+
+<p>
+
+Receive funds after successful approval.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+    <section id="faq" class="section">
+      <div class="container-max">
+        <div class="faq-card p-4 p-md-5">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-title mt-3">Frequently Asked Questions</h2>
+          <p class="section-copy mb-4">Clear answers to common questions about Flexi Hybrid Loan assistance, privacy, and the next steps after form submission.</p>
+
+          <div class="faq-shell">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Does checking eligibility here affect my CIBIL score?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    No. Checking options on this page does not impact your <a href="/blogs/what-is-cibil/" style="color: #0891B2;font-weight:600;">CIBIL Score.</a> We do not initiate any credit bureau enquiry at this stage. A CIBIL enquiry happens only if you decide to apply with a bank or NBFC.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Can I withdraw funds again after making a repayment?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Depending on lender policy and available limit, borrowers may be able to withdraw funds again after making part-prepayments. This flexibility is one of the key benefits of a Flexi Hybrid Loan.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Is interest charged on the entire approved loan limit?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    In most Flexi Hybrid Loan structures, interest is generally charged only on the utilized loan amount rather than the entire approved limit. Terms may vary by lender.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    Can I make multiple part-prepayments in a Flexi Hybrid Loan?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Many lenders allow multiple part-prepayments during the loan tenure. Reducing the utilized amount may help lower future interest costs, subject to lender terms and conditions.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                    Who should consider a Flexi Hybrid Loan?
+                  </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Flexi Hybrid Loans are often considered by salaried employees, self-employed professionals and business owners who require funding flexibility, lower initial EMI and better cash flow management.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                    What is the difference between a Personal Loan and a Flexi Hybrid Loan?
+                  </button>
+                </h3>
+                <div id="faq6" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A traditional Personal Loan usually has a fixed EMI from the beginning of the tenure. A Flexi Hybrid Loan may offer lower initial EMI, withdrawal facility and interest charged only on the utilized amount, depending on lender policy.
+                  </div>
+                </div>
+              </div>                                                    
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                    What is a Flexi Hybrid Loan?
+                  </button>
+                </h3>
+                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A Flexi Hybrid Loan is a loan structure where the initial tenure may have lower EMI or a lighter repayment structure, followed by regular EMI later. Product structure varies by lender and applicant profile.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                    Is FreyaFinserv a bank or NBFC?
+                  </button>
+                </h3>
+                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    No. FreyaFinserv is a loan guidance platform. We help users understand suitable options before they proceed with a bank or NBFC application.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                    Will I get a guaranteed loan or lowest interest rate?
+                  </button>
+                </h3>
+                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Loan approval, pricing, and eligibility depend on lender policy, income profile, credit behaviour, and documentation. We provide guidance and indicative suitability, not guarantees.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                    What happens after I submit my details?
+                  </button>
+                </h3>
+                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A representative reviews your requirement and shares suitable guidance. No application is submitted to any bank or NBFC without your confirmation.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
+                    Is my personal information safe?
+                  </button>
+                </h3>
+                <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes. Your information is used for providing loan-related guidance and is handled as per the applicable privacy policy shown on the website.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">Ideal audience</span>
-            <h2>Use this homepage for customer acquisition and partner onboarding.</h2>
-          </div>
-          <p>The same design can support multiple finance business models by changing headings, service cards, and the lead form destination.</p>
-        </div>
+    <section class="section section-soft">
+      <div class="container-max">
+        <div class="cta-panel">
+          <span class="eyebrow">Get Started</span>
+          <h2 class="section-title mt-3">Find The Right Loan With Expert Guidance</h2>
+          <p class="section-copy">Compare loan options from multiple banks and NBFCs.
+Whether you're looking for a Personal Loan, Home Loan,
+Business Loan, Debt Consolidation or Loan Against Property,
+our experts help you choose the most suitable option.</p>
 
-        <div class="audience-grid">
-          <article class="audience-card reveal">
-            <h3>Loan consultants</h3>
-            <p>Perfect for individuals or firms helping customers compare and process lending options across categories.</p>
-            <div class="pill-row">
-              <span class="pill">Home loan</span>
-              <span class="pill">LAP</span>
-              <span class="pill">BT + top-up</span>
-            </div>
-          </article>
-          <article class="audience-card reveal">
-            <h3>DSA businesses</h3>
-            <p>Useful for teams that need a sharper online presence to onboard referral partners and collect DSA interest leads.</p>
-            <div class="pill-row">
-              <span class="pill">Onboarding</span>
-              <span class="pill">Lead routing</span>
-              <span class="pill">Partner support</span>
-            </div>
-          </article>
-          <article class="audience-card reveal">
-            <h3>Finance agencies</h3>
-            <p>Strong fit for agencies offering retail plus business loan services with a branded consultation or callback model.</p>
-            <div class="pill-row">
-              <span class="pill">SME finance</span>
-              <span class="pill">Professional loans</span>
-              <span class="pill">Lead generation</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="cta-panel reveal">
-          <div>
-            <span class="eyebrow" style="background: rgba(255,255,255,0.14); color: white;">Ready to launch</span>
-            <h2>Turn this into your real finance website homepage.</h2>
-            <p>Replace the demo business name, add your actual loan products, connect the form to WhatsApp or Formsubmit, and publish it as a polished first page for your financial services brand.</p>
-          </div>
           <div class="cta-actions">
-            <a class="btn btn-secondary" href="mailto:hello@example.com">Email Enquiry</a>
-            <a class="btn btn-secondary" href="tel:+910000000000">Call Now</a>
-            <a class="btn btn-primary" href="#home">Back to Top</a>
+            <a href="#main-content" class="nav-cta">Get Free Loan Consultation</a>
+            <a href="/emi-calculator/" class="btn-outline-brand">Calculate EMI</a>
           </div>
         </div>
       </div>
     </section>
   </main>
+  
+  
+  <!-- ====== Footer social icons START ====== -->
+  <style>
+    footer.footer .social {
+     display:flex; gap:10px; align-items:center; margin:12px 0;
+    }
+    footer.footer .social a{
+     width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;
+     border-radius:10px;background:#fff;border:1px solid rgba(2,6,23,.10);
+     box-shadow:0 4px 10px rgba(2,6,23,.06);
+     text-decoration:none; transition:transform .15s ease,border-color .2s ease;
+    }
+    footer.footer .social a:hover{ transform:translateY(-2px); border-color:#0ea5e950; }
+    footer.footer .social svg{ width:18px;height:18px; display:block; }
+    footer.footer .social .fb svg{ fill:#1877F2; }
+    footer.footer .social .ig svg{ fill:#E1306C; }
+    footer.footer .social .ln svg{ fill:#0A66C2; }
+    footer.footer .social .x  svg{ fill:#111; }
+    footer.footer .social .yt svg{ fill:#FF0000; }
+    footer.footer .social .wa svg{ fill:#25D366; }
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3 style="font-family: var(--font-display); margin-bottom: 0.75rem;">Loan DSA Financial</h3>
-        <p>A modern homepage concept for loan consulting, DSA services, and finance lead generation businesses.</p>
+   .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 30px 0 20px;
+   }
+
+   @media (max-width: 768px) {
+   .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+   }
+
+   footer.footer h4 {
+    margin-bottom: 12px;
+    color: #0f172a;
+    }
+  </style>
+  <!-- ====== Footer social icons END ====== -->
+
+  <footer id="contact" class="footer" role="contentinfo">
+    <div class="container-max">
+      
+      <img class="brand-logo mb-3"
+        src="/images/FreyaFinserv-logo.png"
+        alt="FreyaFinserv logo"
+        width="220"
+        height="52"
+        loading="lazy"
+        decoding="async">
+      
+        <div class="social" aria-label="Social links">
+          <a class="fb" href="/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.48 17.52 2 11.94 2 6.36 2 1.88 6.48 1.88 12.06c0 4.88 3.56 8.93 8.22 9.8v-6.93H7.9v-2.87h2.2V9.6c0-2.18 1.3-3.39 3.3-3.39.96 0 1.97.17 1.97.17v2.16h-1.11c-1.1 0-1.44.69-1.44 1.4v1.68h2.45l-.39 2.87h-2.06v6.93c4.66-.87 8.22-4.92 8.22-9.8z"/></svg>
+          </a>
+          <a class="ig" href="/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.75-2.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"/></svg>
+          </a>
+          <a class="ln" href="/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3A2.94 2.94 0 0 1 22 6v12a2.94 2.94 0 0 1-3 3H5a2.94 2.94 0 0 1-3-3V6a2.94 2.94 0 0 1 3-3Zm-9.65 7H6.08v8h3.27Zm.23-2.93a1.86 1.86 0 1 0-1.87 1.86 1.86 1.86 0 0 0 1.87-1.86ZM21 18v-4.27c0-3.06-1.63-4.48-3.81-4.48a3.28 3.28 0 0 0-3 1.65h-.06V10H11v8h3.27v-4.44c0-1.17.22-2.31 1.68-2.31S17.6 12.33 17.6 13.6V18Z"/></svg>
+          </a>
+          <a class="x" href="/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h4.6l5.17 6.96L16.8 3H21l-7.54 9.9L21.3 21h-4.6l-5.5-7.4L7.2 21H2l7.83-10.25z"/></svg>
+          </a>
+          <a class="yt" href="/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2s-.23-1.65-.95-2.37c-.9-.95-1.92-.96-2.38-1C16.9 2.4 12 2.4 12 2.4h-.01s-4.9 0-8.17.43c-.46.05-1.48.06-2.38 1C.73 4.55.5 6.2.5 6.2S.27 8.22.27 10.24v1.52c0 2.02.23 4.04.23 4.04s.23 1.65.95 2.37c.9.95 2.08.92 2.61 1.02 1.9.18 7.94.43 7.94.43s4.9 0 8.17-.43c.46-.05 1.48-.06 2.38-1 .72-.72.95-2.37.95-2.37s.23-2.02.23-4.04v-1.52c0-2.02-.23-4.04-.23-4.04ZM9.75 14.41V7.59l6.34 3.41-6.34 3.41Z"/></svg>
+          </a>
+          <a class="wa" href="https://wa.me/91" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.03 0 11.97 11.97 0 0 0 1.8 17.7L0 24l6.45-1.7A11.96 11.96 0 0 0 12.03 24h.01A11.97 11.97 0 0 0 24 12.02a11.8 11.8 0 0 0-3.48-8.54ZM12.04 21.5h-.01a9.45 9.45 0 0 1-4.83-1.32l-.35-.2-3.83 1.01 1.02-3.73-.22-.38a9.48 9.48 0 1 1 8.22 4.62Zm5.49-7.17c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15s-.78.98-.96 1.18-.35.22-.64.08a7.73 7.73 0 0 1-2.28-1.41 8.57 8.57 0 0 1-1.58-1.96c-.17-.3 0-.46.13-.62.13-.15.3-.38.45-.58.15-.2.2-.35.3-.58.1-.22.05-.42-.03-.58-.08-.15-.68-1.63-.93-2.23-.24-.6-.5-.5-.68-.5h-.58c-.2 0-.52.08-.8.38-.28.3-1.06 1.03-1.06 2.5s1.09 2.9 1.24 3.11c.15.2 2.14 3.25 5.19 4.55.73.32 1.3.51 1.74.65.73.23 1.4.2 1.93.12.59-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.08-.13-.28-.2-.58-.35Z"/></svg>
+          </a>
+        </div>
+
+      <div class="footer-grid">
+        <div>
+          <h4>About FreyaFinserv</h4>
+          <p>Professional loan guidance platform helping users understand suitable lending options before applying.</p>
+        </div>
+
+        <div>
+          <h4>Useful Links</h4>
+          <a href="/">Free CIBIL Score Check</a>
+          <a href="/">EMI Calculator</a>
+          <a href="/">Blogs</a>
+          <a href="/">Credit Score Guide</a>
+          <a href="/">What is Balance Transfer</a>
+          <a href="/">What is EMI</a>
+        </div>
+
+        <div>
+          <h4>Loan Options</h4>
+          <a href="/">Debt Consolidation</a>
+          <a href="/">Reduce EMI Burden</a>
+          <a href="/">Check Lowest interest Rate</a>
+          <a href="/">Personal Loan</a>
+          <a href="/">Flexi Hybrid Loan</a>
+          <a href="/">Home Loan</a>
+        </div>
+
+        <div>
+          <h4>Contact & Policies</h4>
+          <a href="/">About FreyaFinserv</a>
+          <a href="/">Contact Us</a>
+          <a href="/">Privacy Policy</a>
+          <a href="/">Terms &amp; Conditions</a>
+        </div>
       </div>
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Retail loans</a></li>
-          <li><a href="#services">Business finance</a></li>
-          <li><a href="#partners">DSA services</a></li>
-        </ul>
+
+      <div class="footer-bottom">
+        © 2025-<span id="year"></span> FreyaFinserv.com. All rights reserved.
       </div>
-      <div>
-        <h4>Sections</h4>
-        <ul>
-          <li><a href="#process">How it works</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#home">Hero section</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>Vadodara / Gujarat / India</li>
-          <li>+91 00000 00000</li>
-          <li>hello@example.com</li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-note">
-      <span>Customize content, branding, colours, and form action before publishing.</span>
-      <span>Single-file HTML homepage with responsive layout and theme toggle.</span>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
-    const html = document.documentElement;
-    const themeButton = document.querySelector('[data-theme-toggle]');
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileNav = document.getElementById('mobileNav');
-    let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    html.setAttribute('data-theme', theme);
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    const updateThemeIcon = () => {
-      if (!themeButton) return;
-      themeButton.innerHTML = theme === 'dark'
-        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
-        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
-    };
-    updateThemeIcon();
+    (function () {
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      const menu = document.getElementById('mobileMenu');
+      if (!toggle || !menu) return;
 
-    themeButton?.addEventListener('click', () => {
-      theme = theme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', theme);
-      updateThemeIcon();
-    });
+      const setExpanded = (open) => {
+        toggle.setAttribute('aria-expanded', String(open));
+        menu.classList.toggle('open', open);
+      };
 
-    menuToggle?.addEventListener('click', () => {
-      const open = mobileNav.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        menuToggle?.setAttribute('aria-expanded', 'false');
+      toggle.addEventListener('click', () => {
+        const open = !menu.classList.contains('open');
+        setExpanded(open);
       });
-    });
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+      menu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') setExpanded(false);
       });
-    }, { threshold: 0.18 });
 
-    document.querySelectorAll('.reveal').forEach(el => {
-      if (!el.classList.contains('visible')) observer.observe(el);
-    });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 991) setExpanded(false);
+      });
+    })();
   </script>
+
+    <script>
+const googleScriptURL = "https://script.google.com/macros/s/AKfycbyYa9eV4Y6P8k0v6PKvjF4eXbNUb0UfipnO71rt2yuBbCcDrElvPW-uHwY9t9yNsLYyhQ/exec";
+
+document.getElementById("leadForm").addEventListener("submit", async function(e) {
+
+  e.preventDefault();
+const submitBtn = document.getElementById("submitBtn");
+
+submitBtn.disabled = true;
+submitBtn.innerHTML = `
+<span class="btn-spinner"></span>
+Submitting...
+`;
+  const form = e.target;
+  const formData = new FormData(form);
+
+  // Convert form data for Google Sheets
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+  
+  // Get visitor IP
+  try {
+  const ipResponse = await fetch("https://api.ipify.org?format=json");
+  const ipData = await ipResponse.json();
+  data.ip = ipData.ip;
+  }
+  catch (error) {
+  data.ip = "";
+  console.log("IP fetch failed");
+  }
+
+
+  try {
+
+    // SEND TO WEB3FORMS FIRST
+    const web3Response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const web3Result = await web3Response.json();
+
+    console.log(web3Result);
+
+    
+// Send to Google Sheet and wait
+    console.log("Sending to Sheet:", data);
+
+await fetch(googleScriptURL, {
+  method: "POST",
+  mode: "no-cors",
+  body: JSON.stringify(data)
+});
+
+console.log("Lead sent to Google Sheet");
+
+    // SUCCESS
+if (web3Result.success) {
+
+  submitBtn.innerHTML = `
+  <span class="btn-spinner"></span>
+  Redirecting...
+  `;
+
+  setTimeout(() => {
+    window.location.href = "/apply-now/thank-you/";
+  }, 500);
+
+}    
+    else {
+
+  submitBtn.disabled = false;
+
+  submitBtn.innerHTML = "Get Expert Assistance";
+
+  alert("Unable to submit your request. Please try again.");
+
+  console.log(web3Result);
+}
+
+  }
+  catch(error) {
+
+    console.error(error);
+
+    submitBtn.disabled = false;
+
+    submitBtn.innerHTML = "Get Expert Assistance";
+
+    alert("Unable to submit your request. Please try again.");
+
+}
+
+});
+</script>
+
+<script>
+window.addEventListener("pageshow", function () {
+
+    const submitBtn = document.getElementById("submitBtn");
+
+    if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = submitBtn.dataset.defaultText;
+    }
+
+});
+</script>
+	
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DHT9T8GZB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9DHT9T8GZB');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "u8560jazbw");
+  </script>	
 </body>
 </html>
