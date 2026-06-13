@@ -2076,33 +2076,47 @@ Receive funds after successful approval.
 
         <h3>Quick Enquiry</h3>
 
-        <form>
+<form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 
-          <input
-            type="text"
-            class="contact-input"
-            placeholder="Your Name"
-            required
-          >
+    <!-- Web3Forms -->
+    <input type="hidden" name="access_key" value="467f06e5-07a9-4e3b-b517-0f0ec9b405a2">
+    <input type="hidden" name="subject" value="New Contact Enquiry - FreyaFinserv">
+    <input type="hidden" name="from_name" value="FreyaFinserv Website">
+    <input type="hidden" name="source_page" value="Contact Us Section">
 
-          <input
-            type="tel"
-            class="contact-input"
-            placeholder="Mobile Number"
-            required
-          >
+    <input
+        type="text"
+        name="name"
+        class="contact-input"
+        placeholder="Your Name"
+        required
+    >
 
-          <textarea
-            class="contact-input"
-            rows="4"
-            placeholder="Requirement"
-          ></textarea>
+    <input
+        type="tel"
+        name="mobile"
+        class="contact-input"
+        placeholder="Mobile Number"
+        required
+    >
 
-          <button type="submit" class="contact-btn">
-            Request Callback
-          </button>
+    <textarea
+        name="requirement"
+        class="contact-input"
+        rows="4"
+        placeholder="Requirement"
+        required
+    ></textarea>
 
-        </form>
+    <button
+        type="submit"
+        class="contact-btn"
+        id="contactSubmitBtn"
+        data-default-text="Request Callback">
+        Request Callback
+    </button>
+
+</form>       
 
       </div>
 
@@ -2428,7 +2442,7 @@ our experts help you choose the most suitable option.</p>
   </script>
 
     <script>
-const googleScriptURL = "https://script.google.com/macros/s/AKfycbyYa9eV4Y6P8k0v6PKvjF4eXbNUb0UfipnO71rt2yuBbCcDrElvPW-uHwY9t9yNsLYyhQ/exec";
+const googleScriptURL = "https://script.google.com/macros/s/AKfybyYa9eV4Y6P8k0v6PKvjF4eXbNUb0UfipnO71rt2yuBbCcDrElvPW-uHwY9t9yNsLYyhQ/exec";
 
 document.getElementById("leadForm").addEventListener("submit", async function(e) {
 
@@ -2537,7 +2551,56 @@ window.addEventListener("pageshow", function () {
 
 });
 </script>
-	
-    	
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+
+    e.preventDefault();
+
+    const form = this;
+    const btn = document.getElementById("contactSubmitBtn");
+
+    btn.disabled = true;
+    btn.textContent = "Submitting...";
+
+    try {
+
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form)
+        });
+
+        const result = await response.json();
+
+        if(result.success){
+
+            btn.textContent = "Submitted ✓";
+
+            form.reset();
+
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.textContent = btn.dataset.defaultText;
+            }, 3000);
+
+        } else {
+
+            alert("Something went wrong. Please try again.");
+
+            btn.disabled = false;
+            btn.textContent = btn.dataset.defaultText;
+        }
+
+    } catch(error){
+
+        alert("Network error. Please try again.");
+
+        btn.disabled = false;
+        btn.textContent = btn.dataset.defaultText;
+    }
+
+});
+</script>
+	    	
 </body>
 </html>
